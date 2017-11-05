@@ -121,7 +121,7 @@
 
 		<section class="main-map">
 			<h2 class="hidden">Как добраться</h2>
-			<img src="" alt="" class="map">
+			<img src="img/map.png" alt="карта" class="map">
 			<div class="feedback">
 				<p class="contacts">
 					Адрес главного офиса и офлайн-магазина:<br>
@@ -151,8 +151,8 @@
 			<li><a href="#">Экологические стандарты</a></li>
 		</ul>
 		<p class="copyright">
-			<img src="" alt="htmlacademy.ru">
-			<p>Сделано в HTML Academy © 2017</p>
+			<img src="img/logo-htmlacademy-small.svg" alt="htmlacademy.ru">
+			<a href="https://htmlacademy.ru/">Сделано в HTML Academy © 2017</a>
 		</p>
 	</footer>
 
@@ -161,10 +161,10 @@
 	<section class="feedback-hidden">
 		<h2 class="hidden">Обратная связь</h2>
 		<p>Мы обязательно вам ответим!</p>
-		<form action="" class="feedback-form">
-			<p><input type="text" name="user-name" id="" placeholder="Как вас зовут?"></p>
-			<p><input type="email" name="feedback-email" id="" placeholder="Ваша почта для ответа?"></p>
-			<p><textarea name="message" id="" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea></p>
+		<form action="index.html" method="get" class="feedback-form">
+			<p><input type="text" name="user-name" placeholder="Как вас зовут?"></p>
+			<p><input type="email" name="feedback-email" placeholder="Ваша почта для ответа?"></p>
+			<p><textarea name="message" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea></p>
 			<input class="button" type="submit" value="Отправить">
 		</form>
 	</section>
@@ -180,15 +180,16 @@
 	</div>
 
 	<div class="search">
-		<form action="" class="search-form">
-			<input type="text" name="search-query" id="" placeholder="Что ищем?">
+		<form action="index.html" method="get" class="search-form">
+			<input type="text" name="search-query" placeholder="Что ищем?">
 		</form>
 	</div>
 
 	<section class="login-hidden">
-		<form action="index.html" method="post" class="login-form">
-			<p><input type="email" name="user-email" id="" placeholder="Электронная почта"></p>
-			<p><input type="email" name="user-password" id="" placeholder="Пароль"></p>
+		<h2 class="hidden">Вход</h2>
+		<form action="index.html" method="get" class="login-form">
+			<p><input type="email" name="user-email" placeholder="Электронная почта"></p>
+			<p><input type="email" name="user-password" placeholder="Пароль"></p>
 			<input type="submit" value="Войти">
 		</form>
 		<a href="login.html">Забыли пароль?</a>
