@@ -50,3 +50,25 @@ button3.addEventListener("click", function() {
 	document.getElementById("content-slide-2").className = "visually-hidden";
 	document.getElementById("content-slide-3").classList.remove("visually-hidden");
 });
+
+
+// 'обратная связь'
+
+var openLink = document.getElementById("feedback-open");
+var buttonClose = document.getElementById("feedback-close");
+
+openLink.addEventListener("click", function() {
+	//убираем класс hidden
+	document.getElementById("modal-feedback").classList.remove("visually-hidden");
+
+	// добавляем overlay в body
+	document.getElementById("main-body").classList.add("overlay");
+});
+
+buttonClose.addEventListener("click", function() {
+	// убираем overlay в body
+	document.getElementById("main-body").classList.remove("overlay");
+
+	//добавляем класс hidden
+	document.getElementById("modal-feedback").classList.add("visually-hidden");
+});
