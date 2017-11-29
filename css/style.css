@@ -15,11 +15,11 @@ a {
 	text-decoration: none;
 }
 
-.product a {
+.product a, .main-nav a {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.product a:hover {
+.product a:hover, {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
@@ -140,7 +140,6 @@ input[type="radio"].visually-hidden {
 
 .main-nav a {
 	display: block;
-	padding: 10px 10px;
 }
 
 .main-nav li {
@@ -148,6 +147,8 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 18px;
+	
+	padding: 10px 10px;
 }
 
 
@@ -199,7 +200,7 @@ input[type="radio"].visually-hidden {
 	line-height: 16px;
 }
 
-.user-nav a[href="#search"] {
+.user-nav li:first-child {
 	text-indent: -9999px;
 	width: 32px;
 	height: 32px;
@@ -209,7 +210,13 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 }
 
-.user-nav a[href="#search"]:hover {
+.user-nav li:first-child a {
+	width: 32px;
+	height: 32px;
+	padding: 0;
+}
+
+.user-nav li:first-child:hover {
 	text-indent: -9999px;
 	width: 32px;
 	height: 32px;
@@ -271,7 +278,7 @@ input[type="radio"].visually-hidden {
 	top: 5px;
 }
 
-.user-nav a[href="#login"]:hover::before {
+.user-nav li:nth-child(2):hover a[href="#login"]::before {
 	content: " ";
 	width: 21px;
 	height: 20px;
@@ -283,9 +290,10 @@ input[type="radio"].visually-hidden {
 	top: 7px;
 }
 
-.user-nav a:hover {
+.user-nav li:hover {
 	background-color: #f8f7f4;
 	color: #333333;
+	border-radius: 40px;
 }
 
 .header-hours {
@@ -306,11 +314,23 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;	
 }
 
-.user-nav li:first-child a:hover {
+.user-nav li:first-child:hover {
 	color: black;
 }
 
 /*  SLIDER  */
+
+.slide-1 {
+	background-color: #849d8f;
+}
+
+.slide-2 {
+	background-color: #8996a6;
+}
+
+.slide-3 {
+	background-color: #9d8b84;
+}
 
 .main-slider .container {
 	position: relative;
@@ -412,6 +432,10 @@ input[type="radio"].visually-hidden {
 
 .pagination button:hover {
 	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.pagination button:focus {
+	outline: none;
 }
 
 button.main-slider-active {
@@ -768,29 +792,46 @@ button.main-slider-active {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	background-color: #849d8f;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .social-links {
 	display: flex;
+	padding-top: 15px;
+	padding-left: 5px;
 }
 
 .social-links li {
 	border-radius: 50%;
-	background-color: #b8c7bf;
 	margin-right: 12px;
 	background-image: url("../img/twitter.svg");
 	background-position: center;
 	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	border: 2px solid rgba(255, 255, 255, 0.5);
+
+	opacity: 0.8;
+}
+
+.social-links li:last-child {
+	margin-right: 0;
+}
+
+.social-links li:hover {
+	opacity: 1;
+}
+
+.social-links li:active {
+	opacity: 0.9;
+	border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-links a {
 	display: block;
 	text-indent: -9999px;
-	width: 37px;
-	height: 37px;
+	height: 100%;
 }
 
 .social-links li:nth-child(2) {
@@ -809,14 +850,22 @@ button.main-slider-active {
 	max-width: 330px;
 	display: flex;
 	flex-flow: row wrap;
+
+	padding-top: 10px;
+	padding-left: 30px;
 }
 
 .footer-documents li {
 	flex-basis: 50%;
 	font-size: 13px;
 	line-height: 18px;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 	position: relative;
+}
+
+.footer-documents li:nth-child(3),
+.footer-documents li:nth-child(4) {
+	margin-bottom: 0;
 }
 
 .footer-documents a,
@@ -962,6 +1011,8 @@ body.overlay:before {
 	position: absolute;
 	top: 60px;
 	right: 256px;
+
+	text-indent: 0;
 }
 
 .search-form input {
@@ -1056,7 +1107,8 @@ body.overlay:before {
 	margin-right: 0;
 	font-size: 14px;
 	line-height: 16px;
-	font-weight: 400;	
+	font-weight: 400;
+	padding: 0;	
 }
 
 .sub-menu li:first-child a {
@@ -1081,6 +1133,7 @@ body.overlay:before {
 	display: block;
 	padding: 10px 0;
 	padding-left: 20px;
+	border-bottom: none;
 }
 
 .sub-menu .sub-menu-active {
@@ -1092,6 +1145,9 @@ body.overlay:before {
 	border-radius: 0;
 }
 
+.sub-menu .sub-menu-active:hover {
+	background-color: #d07058;
+}
 
 .sub-menu li:active {
 	background-color: #f6b5a5;

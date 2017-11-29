@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="slide-1">
+  <body id="main-body" class="slide-3">
 	<header class="main-header">
 		<div class="container">
 			<nav class="main-navigation">
@@ -16,7 +16,7 @@
 		    			<ul id="sub-menu" class="sub-menu hidden">
 							<li class="divider"><a href="new.html">Новинки</a></li>
 							<li><a href="catalog.html">Сливочное</a></li>
-							<li class="sub-menu-active"><a href="sorbet.html">Щербеты</a></li>
+							<li><a href="sorbet.html">Щербеты</a></li>
 							<li><a href="fruit-ice.html">Фруктовый лед</a></li>
 							<li><a href="gelato.html">Мелорин</a></li>
 						</ul>
@@ -69,30 +69,33 @@
 			<div class="container">
 				<h2 class="visually-hidden top-choice">Акция: давайте оба!</h2>
 				<ul class="slider-content">
-					<li>
+					<li  id="content-slide-1" class="visually-hidden">
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
-						<img src="img/slider-1.jpg" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">	
+						<img src="img/slider-1.jpg" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
+						<div class="slider-button">
+							<a href="order.html" class="button order">Давайте оба!</a>
+						</div>	
 					</li>
-					<li class="visually-hidden">
+					<li  id="content-slide-2" class="visually-hidden">
 						<h3>Крем-брюле и пломбир с малиновым джемом</h3>
 						<img src="img/slider-2.jpg" alt="Крем-брюле и пломбир с малиновым джемом" width="1045" height="881">
-						<a href="order.html" class="button order">Давайте оба!</a>
+						<div class="slider-button">
+							<a href="order.html" class="button order">Давайте оба!</a>
+						</div>
 					</li>
-					<li class="visually-hidden">
+					<li id="content-slide-3">
 						<h3>Пломбир с помадкой и клубничный щербет</h3>
 						<img src="img/slider-3.jpg" alt="Пломбир с помадкой и клубничный щербет" width="1045" height="881">
-						<a href="order.html" class="button order">Давайте оба!</a>
+						<div class="slider-button">
+							<a href="order.html" class="button order">Давайте оба!</a>
+						</div>
 					</li>
 				</ul>
 
-				<div class="slider-button">
-					<a href="order.html" class="button order">Давайте оба!</a>
-				</div>
-
 				<ul class="pagination">
-					<li><button class="main-slider-active">Слайд 1</button></li>
-					<li><button>Слайд 2</button></li>
-					<li><button>Слайд 3</button></li>
+					<li><button id="slide-1">Слайд 1</button></li>
+					<li><button id="slide-2">Слайд 2</button></li>
+					<li><button class="main-slider-active" id="slide-3">Слайд 3</button></li>
 				</ul>
 			</div>
 		</section>
@@ -251,5 +254,6 @@
 			<button class="modal-close" type="button">Закрыть</button>
 	</section>
 
+	<script src="js/script.js"></script>
   </body>
 </html>
