@@ -26,22 +26,49 @@
 		    		<li><a href="about.html">О Компании</a></li>
 		    	</ul>
 		    	<ul class="user-nav">
-		    		<li class="main-search"><a href="#search">Поиск</a></li>
-		    		<li><a href="#login"><span class="login-img"></span> Вход</a></li>
+		    		<li class="main-search"><a href="#search">Поиск</a>
+		    			<div id="search" class="search hidden">
+							<form action="index.html" method="get" class="search-form">
+								<label for="search-query" class="visually-hidden">Что ищем?</label>
+								<input type="text" id="search-query" name="search-query" placeholder="Что ищем?">
+							</form>
+						</div>
+		    		</li>
+		    		<li class="main-login-hover"><a href="#login"><span class="login-img"></span> Вход</a>
+						<section id="login" class="login hidden">
+							<h2 class="visually-hidden">Вход</h2>
+							<form action="index.html" method="get" class="login-form">
+								<p>
+									<label for="modal-email" class="visually-hidden">Электронная почта</label>
+									<input type="email" id="modal-email" name="user-email" placeholder="Электронная почта">
+								</p>
+								<p>
+									<label for="user-password" class="visually-hidden">Пароль</label>
+									<input type="password" id="user-password" name="user-password" placeholder="Пароль">
+								</p>
+								<button class="button gllacy-button" type="submit">Войти</button>
+								<div class="login-links">
+									<a href="login.html">Забыли пароль?</a>
+									<a href="register.html">Новая регистрация</a>
+								</div>
+							</form>
+						</section>
+					</li>
 		    		<li class="catalog-basket-full">
 		    			<a href="#basket" class="basket-img">2 товара</a>
-		    				<section class="user-basket hidden">
+		    			<div class="catalog-basket-wrapper hidden">
+		    				<section class="user-basket">
 								<h2 class="visually-hidden">Корзина</h2>
 								<table class="basket-table">
 									<tr>
-										<td><button class="small-x" type="button">Удалить</button></td>
+										<td><button class="gllacy-button small-x" type="button">Удалить</button></td>
 										<td class="basket-image"><img src="img/1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33"></td>
 										<td>Пломбир с апельсиновым джемом</td>
 										<td>1,5 кг х <span>200 руб.</span></td>
 										<td>300 руб.</td>
 									</tr>
 									<tr>
-										<td><button class="small-x" type="button">Удалить</button></td>
+										<td><button class="gllacy-button small-x" type="button">Удалить</button></td>
 										<td  class="basket-image"><img src="img/3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33"></td>
 										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
 										<td>1,5 кг х <span>300 руб.</span></td>
@@ -53,6 +80,7 @@
 								</table>
 								<a href="order.html" class="button">Оформить заказ</a>
 							</section>
+		    			</div>
 		    		</li>
 		    	</ul>
 	    	</nav>
@@ -90,7 +118,7 @@
     			</div>
 				<!-- Цена -->
     			<div class="catalog-price">
-    				<label>Цена: 100 руб. - 500 руб.</label>
+    				<label>Цена: 100 руб. – 500 руб.</label>
     				<div class="catalog-price-range">
     					<button class="price min"></button>
     					<button class="price max"></button>
