@@ -9,7 +9,7 @@
 <body>
 	
 	<header class="main-header">
-		<div class="container">
+		<div class="header-container container">
 	    	<nav class="main-navigation">
 	    		<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="Gllacy logo" width="154" height="64"></a>
 		    	<ul class="main-nav">
@@ -30,7 +30,7 @@
 		    			<div id="search" class="search hidden">
 							<form action="index.html" method="get" class="search-form">
 								<label for="search-query" class="visually-hidden">Что ищем?</label>
-								<input type="text" id="search-query" name="search-query" placeholder="Что ищем?">
+								<input class="gllacy-input" type="text" id="search-query" name="search-query" placeholder="Что ищем?">
 							</form>
 						</div>
 		    		</li>
@@ -40,11 +40,11 @@
 							<form action="index.html" method="get" class="login-form">
 								<p>
 									<label for="modal-email" class="visually-hidden">Электронная почта</label>
-									<input type="email" id="modal-email" name="user-email" placeholder="Электронная почта">
+									<input class="gllacy-input" type="email" id="modal-email" name="user-email" placeholder="Электронная почта">
 								</p>
 								<p>
 									<label for="user-password" class="visually-hidden">Пароль</label>
-									<input type="password" id="user-password" name="user-password" placeholder="Пароль">
+									<input class="gllacy-input" type="password" id="user-password" name="user-password" placeholder="Пароль">
 								</p>
 								<button class="button gllacy-button" type="submit">Войти</button>
 								<div class="login-links">
@@ -82,12 +82,12 @@
 							</section>
 		    			</div>
 		    		</li>
+			    	<div class="header-hours">
+			    		<p>С 10 до 20, ежедневно</p>
+			    		<b>8 812 450-25-25</b>
+			    	</div>
 		    	</ul>
 	    	</nav>
-	    	<div class="header-hours">
-	    		<p>С 10 до 20, ежедневно</p>
-	    		<b>8 812 450-25-25</b>
-	    	</div>
     	</div>
     </header>
 
@@ -107,7 +107,7 @@
     			<div class="catalog-sort">
     				<label for="sorting">Сортировка:</label>
     				<div class="select-style">
-					  <select id="sorting" name="sorting">
+					  <select class="catalog-select" id="sorting" name="sorting">
 						  <option value="popular">по популярности</option>
 						  <option value="min-price">сначала недорогие</option>
 						  <option value="max-price">сначала дорогие</option>
@@ -182,7 +182,7 @@
     				</div>
     			</fieldset>
 				<!-- Кнопка -->
-    			<input type="submit" value="Применить" class="form-btn">
+    			<input type="submit" value="Применить" class="gllacy-input form-btn">
     		</form>
     	</section>
 
@@ -231,7 +231,7 @@
 				</div>
 			</article>
 			<article class="product">
-				<h3 class="product-name"><a href="product.html">Сливочное-черничное с цельными ягодами черники</a></h3>
+				<h3 class="product-name product-out"><a href="product.html">Сливочное-черничное с цельными ягодами черники</a></h3>
 				<img src="img/6.jpg" alt="Сливочное-черничное с цельными ягодами черники" class="product-img" width="267" height="267">
 				<b class="product-price">410<span class="rouble">Р</span><span class="kg">/кг</span></b>
 				<div class="product-hover">
@@ -292,7 +292,7 @@
 
     	<ul class="catalog-pagination">
     		<li><a href="#"> &lt; </a></li>
-    		<li class="active"><a href="#">1</a></li>
+    		<li class="pagination-active"><a href="#">1</a></li>
     		<li><a href="#">2</a></li>
     		<li><a href="#">3</a></li>
     		<li><a href="#">4</a></li>
