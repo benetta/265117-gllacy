@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body id="main-body" class="slide-1">
 	<header class="main-header">
@@ -54,12 +54,12 @@
 						</section>
 					</li>
 					<li class="main-basket-empty"><a href="#basket"><span class="basket-img"></span>Пусто</a></li>
-			    	<div class="header-hours">
-			    		<p>С 10 до 20, ежедневно</p>
-			    		<b>8 812 450-25-25</b>
-			    	</div>
 	    		</ul>
 	    	</nav>
+			<div class="header-hours">
+			    <p>С 10 до 20, ежедневно</p>
+			    <b>8 812 450-25-25</b>
+			</div>
     	</div>
     </header>
 	
@@ -268,7 +268,11 @@
 			<button id="feedback-close" class="gllacy-button modal-close" type="button">Закрыть</button>
 	</section>
 
-	<script src="js/script.js"></script>
-	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac20ee7edee38f9048c6c30358e72226e7fd8f9e73436deef11208ff4ea0d76f0&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;scroll=true&amp;id=map"></script>
+	<script 
+		src="js/script.min.js" type="text/javascript"></script>
+	<script 
+		src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script 
+		src="js/myMap.js" type="text/javascript"></script>
   </body>
 </html>

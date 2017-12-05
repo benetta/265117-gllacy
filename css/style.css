@@ -19,7 +19,7 @@ a {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.product a:hover, {
+.product a:hover {
 	border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
@@ -362,11 +362,12 @@ input[type="radio"].visually-hidden {
 }
 
 .header-hours {
-	flex-basis: 50%;
-	margin-left: auto;
-	margin-top: 10px;
 	font-weight: 700;
 	text-align: right;
+
+	position: absolute;
+	right: 27px;
+	top: 70px;
 }
 
 .header-hours p {
@@ -382,6 +383,11 @@ input[type="radio"].visually-hidden {
 }
 
 /*  SLIDER  */
+
+.main-container,
+.catalog-container {
+	margin-top: 50px;
+}
 
 .slide-1 {
 	background-color: #849d8f;
@@ -403,7 +409,7 @@ input[type="radio"].visually-hidden {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	margin-bottom: 37px;
+	margin-bottom: 35px;
 	padding-top: 0;
 
 	min-height: 493px;
@@ -613,13 +619,15 @@ button.main-slider-active {
 .sale-raspberry {
 	background-color: #681122;
 	background-image: url("../img/raspberry.jpg");	
-	background-position: -50px center;
+	background-position: center;
+	background-size: cover;
 }
 
 .sale-chocolate {
 	background-color: #402619;
 	background-image: url("../img/chocolate.jpg");	
-	background-position: -218px -104px;
+	background-position: center;
+	background-size: cover;
 }
 
 /*  ITEMS  */
@@ -1001,7 +1009,7 @@ button.main-slider-active {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	padding-top: 20px;
+	padding-top: 18px;
 	padding-bottom: 20px;
 }
 
@@ -1037,6 +1045,7 @@ button.main-slider-active {
 .social-links li:focus {
 	opacity: 0.9;
 	border: 2px solid rgba(255, 255, 255, 0.7);
+	outline: none;
 }
 
 .social-links a {
@@ -1585,7 +1594,7 @@ button.main-slider-active {
 	    -ms-flex-flow: row wrap;
 	        flex-flow: row wrap;
 	margin: 0;
-	margin-top: -25px;
+	margin-top: -30px;
 
 	z-index: 10;
 }
