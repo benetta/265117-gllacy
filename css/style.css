@@ -196,18 +196,18 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	line-height: 18px;
 	
-	padding: 10px 10px;
+	padding: 8px 10px;
 }
 
 .main-nav li:hover,
-.main-nav li:focus {
+.main-nav li:active {
 	background-color: #f7f6f3;
 	border-radius: 40px;
 	color: #333333;
 	border: none;	
 }
 
-.main-nav li:focus {
+.main-nav li:active {
 	border-radius: 40px;
 	-webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 	        box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
@@ -1042,9 +1042,9 @@ button.main-slider-active {
 	opacity: 1;
 }
 
-.social-links li:focus {
+.social-links li:active {
 	opacity: 0.9;
-	border: 2px solid rgba(255, 255, 255, 0.7);
+	border: 2px solid rgba(255, 255, 255, 0.9);
 	outline: none;
 }
 
@@ -1490,6 +1490,7 @@ button.main-slider-active {
 
 .sub-menu .sub-menu-active {
 	background-color: #d07058;
+	color: #ffffff;
 }
 
 .sub-menu li:hover {
@@ -1501,7 +1502,7 @@ button.main-slider-active {
 	background-color: #d07058;
 }
 
-.sub-menu li:focus {
+.sub-menu li:active {
 	background-color: #f6b5a5;
 	outline: none;
 	border-radius: 0;
@@ -1511,7 +1512,7 @@ button.main-slider-active {
 
 .sub-menu li:first-child,
 .sub-menu li:first-child:hover,
-.sub-menu li:first-child:focus {
+.sub-menu li:first-child:active {
 	border-radius: 0;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -1521,7 +1522,7 @@ button.main-slider-active {
 
 .sub-menu li:last-child,
 .sub-menu li:last-child:hover,
-.sub-menu li:last-child:focus {
+.sub-menu li:last-child:active {
 	border-radius: 0;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
