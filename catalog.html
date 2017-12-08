@@ -10,11 +10,11 @@
 	
 	<header class="main-header">
 		<div class="header-container container">
-	    	<nav class="main-navigation">
-	    		<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="Gllacy logo" width="154" height="64"></a>
-		    	<ul class="main-nav">
-		    		<li class="main-catalog-hover active"><a href="sub-menu" class="gllacy-catalog">Каталог</a>
-		    			<ul id="sub-menu" class="sub-menu hidden">
+			<nav class="main-navigation">
+				<a href="index.html" class="main-logo"><img src="img/logo.svg" alt="Gllacy logo" width="154" height="64"></a>
+				<ul class="main-nav">
+					<li class="main-catalog-hover active"><a href="sub-menu" class="gllacy-catalog">Каталог</a>
+						<ul id="sub-menu" class="sub-menu hidden">
 							<li class="divider"><a href="new.html">Новинки</a></li>
 							<li class="sub-menu-active"><a>Сливочное</a></li>
 							<li><a href="sorbet.html">Щербеты</a></li>
@@ -22,19 +22,19 @@
 							<li><a href="gelato.html">Мелорин</a></li>
 						</ul>
 					</li>
-		    		<li><a href="delivery.html">Доставка и оплата</a></li>
-		    		<li><a href="about.html">О Компании</a></li>
-		    	</ul>
-		    	<ul class="user-nav">
-		    		<li class="main-search"><a href="#search">Поиск</a>
-		    			<div id="search" class="search hidden">
+					<li><a href="delivery.html">Доставка и оплата</a></li>
+					<li><a href="about.html">О Компании</a></li>
+				</ul>
+				<ul class="user-nav">
+					<li class="main-search"><a href="#search">Поиск</a>
+						<div id="search" class="search hidden">
 							<form action="index.html" method="get" class="search-form">
 								<label for="search-query" class="visually-hidden">Что ищем?</label>
 								<input class="gllacy-input" type="text" id="search-query" name="search-query" placeholder="Что ищем?">
 							</form>
 						</div>
-		    		</li>
-		    		<li class="main-login-hover"><a href="#login"><span class="login-img"></span> Вход</a>
+					</li>
+					<li class="main-login-hover"><a href="#login"><span class="login-img"></span> Вход</a>
 						<section id="login" class="login hidden">
 							<h2 class="visually-hidden">Вход</h2>
 							<form action="index.html" method="get" class="login-form">
@@ -54,10 +54,10 @@
 							</form>
 						</section>
 					</li>
-		    		<li class="catalog-basket-full">
-		    			<a href="#basket" class="basket-img">2 товара</a>
-		    			<div class="catalog-basket-wrapper hidden">
-		    				<section class="user-basket">
+					<li class="catalog-basket-full">
+						<a href="#basket" class="basket-img">2 товара</a>
+						<div class="catalog-basket-wrapper hidden">
+							<section class="user-basket">
 								<h2 class="visually-hidden">Корзина</h2>
 								<table class="basket-table">
 									<tr>
@@ -80,115 +80,115 @@
 								</table>
 								<a href="order.html" class="button">Оформить заказ</a>
 							</section>
-		    			</div>
-		    		</li>
-		    	</ul>
-	    	</nav>
+						</div>
+					</li>
+				</ul>
+			</nav>
 			<div class="header-hours">
 				<p>С 10 до 20, ежедневно</p>
 				<b>8 812 450-25-25</b>
 			</div>
-    	</div>
-    </header>
+		</div>
+	</header>
 
-    <main class="catalog-container">
-    	<div class="container">
-    	<h1>Сливочное мороженое</h1>
-    	<ul class="breadcrumbs">
-    		<li><a href="index.html">Главная</a><span>»</span></li>
-    		<li><a href="catalog.html">Каталог</a><span>»</span></li>
-    		<li>Сливочное</li>
-    	</ul>
-    	
-    	<section class="search-filters">
-    		<h2 class="visually-hidden">Сортировать:</h2>
-    		<form action="catalog.html" method="get" class="catalog-filters-form">
+	<main class="catalog-container">
+		<div class="container">
+		<h1>Сливочное мороженое</h1>
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a><span>»</span></li>
+			<li><a href="catalog.html">Каталог</a><span>»</span></li>
+			<li>Сливочное</li>
+		</ul>
+		
+		<section class="search-filters">
+			<h2 class="visually-hidden">Сортировать:</h2>
+			<form action="catalog.html" method="get" class="catalog-filters-form">
 				<!-- Сортировка -->
-    			<div class="catalog-sort">
-    				<label for="sorting">Сортировка:</label>
-    				<div class="select-style">
+				<div class="catalog-sort">
+					<label for="sorting">Сортировка:</label>
+					<div class="select-style">
 					  <select class="catalog-select" id="sorting" name="sorting">
 						  <option value="popular">по популярности</option>
 						  <option value="min-price">сначала недорогие</option>
 						  <option value="max-price">сначала дорогие</option>
 						  <option value="fat">по жирности</option>
 					  </select>
-    				<span class="select-arrow"></span>
+					<span class="select-arrow"></span>
 					</div>
-    			</div>
+				</div>
 				<!-- Цена -->
-    			<div class="catalog-price">
-    				<label>Цена: 100 руб. – 500 руб.</label>
-    				<div class="catalog-price-range">
-    					<button class="price min"></button>
-    					<button class="price max"></button>
-    				</div>
-    			</div>
+				<div class="catalog-price">
+					<label>Цена: 100 руб. – 500 руб.</label>
+					<div class="catalog-price-range">
+						<button class="price min"></button>
+						<button class="price max"></button>
+					</div>
+				</div>
 				<!-- Жирность -->
-    			<fieldset class="catalog-fat">
-    				<legend class="add-text">Жирность:</legend>
-    				<div class="catalog-fat-wrapper">
-	    				<label>
-    						<input type="radio" name="fat" value="0%" class="visually-hidden">
-    						<span class="radio-input"></span>
-    						0%
-    					</label>
-    					<label>
-   	 						<input type="radio" name="fat" value="10%" class="visually-hidden" checked>
-   	 						<span class="radio-input"></span>
-    						до 10%
-    					</label>
-    					<label>
-    						<input type="radio" name="fat" value="30%" class="visually-hidden">
-    						<span class="radio-input"></span>
-    					до 30%
-    					</label>
-    					<label>
-    						<input type="radio" name="fat" value="31%" class="visually-hidden">
-    						<span class="radio-input"></span>
-    						выше 30%
-    					</label>
-    				</div>
-    			</fieldset>
+				<fieldset class="catalog-fat">
+					<legend class="add-text">Жирность:</legend>
+					<div class="catalog-fat-wrapper">
+						<label>
+							<input type="radio" name="fat" value="0%" class="visually-hidden">
+							<span class="radio-input"></span>
+							0%
+						</label>
+						<label>
+							<input type="radio" name="fat" value="10%" class="visually-hidden" checked>
+							<span class="radio-input"></span>
+							до 10%
+						</label>
+						<label>
+							<input type="radio" name="fat" value="30%" class="visually-hidden">
+							<span class="radio-input"></span>
+						до 30%
+						</label>
+						<label>
+							<input type="radio" name="fat" value="31%" class="visually-hidden">
+							<span class="radio-input"></span>
+							выше 30%
+						</label>
+					</div>
+				</fieldset>
 				<!-- Наполнители -->
-    			<fieldset class="catalog-flavors">
-    				<legend class="add-text">Наполнители:</legend>
-    				<div class="catalog-flavors-wrapper">
-	    				<label>
-	    					<input type="checkbox" name="flavor1" value="choco" class="visually-hidden" checked>
-	    					<span class="checkbox-input"></span>
-	    					шоколадные
-	    				</label>
-	    				<label>
-	    					<input type="checkbox" name="flavor2" value="sugar" class="visually-hidden" checked>
-	    					<span class="checkbox-input"></span>
-	    					сахарные присыпки
-	    				</label>
-	    				<label>
-	    					<input type="checkbox" name="flavor3" value="fruit" class="visually-hidden">
-	    					<span class="checkbox-input"></span>
-	    					фрукты
-	    				</label>
-	    				<label>
-	    					<input type="checkbox" name="flavor4" value="syrop" class="visually-hidden">
-	    					<span class="checkbox-input"></span>
-	    					сиропы
-	    				</label>
-	    				<label>
-	    					<input type="checkbox" name="flavor5" value="jam" class="visually-hidden">
-	    					<span class="checkbox-input"></span>
-	    					джемы
-	    				</label>
-    				</div>
-    			</fieldset>
+				<fieldset class="catalog-flavors">
+					<legend class="add-text">Наполнители:</legend>
+					<div class="catalog-flavors-wrapper">
+						<label>
+							<input type="checkbox" name="flavor1" value="choco" class="visually-hidden" checked>
+							<span class="checkbox-input"></span>
+							шоколадные
+						</label>
+						<label>
+							<input type="checkbox" name="flavor2" value="sugar" class="visually-hidden" checked>
+							<span class="checkbox-input"></span>
+							сахарные присыпки
+						</label>
+						<label>
+							<input type="checkbox" name="flavor3" value="fruit" class="visually-hidden">
+							<span class="checkbox-input"></span>
+							фрукты
+						</label>
+						<label>
+							<input type="checkbox" name="flavor4" value="syrop" class="visually-hidden">
+							<span class="checkbox-input"></span>
+							сиропы
+						</label>
+						<label>
+							<input type="checkbox" name="flavor5" value="jam" class="visually-hidden">
+							<span class="checkbox-input"></span>
+							джемы
+						</label>
+					</div>
+				</fieldset>
 				<!-- Кнопка -->
-    			<input type="submit" value="Применить" class="gllacy-input form-btn">
-    		</form>
-    	</section>
+				<input type="submit" value="Применить" class="gllacy-input form-btn">
+			</form>
+		</section>
 
-    	<section class="product-list">
-    		<h2 class="visually-hidden">Список товаров</h2>
-    		<article class="product">
+		<section class="product-list">
+			<h2 class="visually-hidden">Список товаров</h2>
+			<article class="product">
 				<h3 class="product-name"><a href="product.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 				<img src="img/1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" class="product-img" width="267" height="267">
 				<b class="product-price">310<span class="rouble">Р</span><span class="kg">/кг</span></b>
@@ -288,22 +288,22 @@
 					<a href="product.html" class="button">Быстрый просмотр</a>
 				</div>
 			</article>
-    	</section>
+		</section>
 
-    	<ul class="catalog-pagination">
-    		<li><a href="#"> &lt; </a></li>
-    		<li class="pagination-active"><a href="#">1</a></li>
-    		<li><a href="#">2</a></li>
-    		<li><a href="#">3</a></li>
-    		<li><a href="#">4</a></li>
-    		<li><a href="#">5</a></li>
-    		<li><a href="#">></a></li>
-    	</ul>
-    	</div>
-    </main>
+		<ul class="catalog-pagination">
+			<li><a href="#"> &lt; </a></li>
+			<li class="pagination-active"><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li><a href="#">4</a></li>
+			<li><a href="#">5</a></li>
+			<li><a href="#">></a></li>
+		</ul>
+		</div>
+	</main>
 
-    <footer class="main-footer">
-    	<div class="container">
+	<footer class="main-footer">
+		<div class="container">
 			<ul class="social-links">
 				<li><a href="https://twitter.com/htmlacademy_ru">Twitter</a></li>
 				<li><a href="https://www.instagram.com/htmlacademy">Instagram</a></li>
