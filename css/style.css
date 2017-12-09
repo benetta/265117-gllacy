@@ -113,7 +113,7 @@ a {
 
 /*		VISUALLY-HIDDEN		*/
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -152,6 +152,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+	min-height: 119px;
 }
 
 .main-navigation {
@@ -384,11 +385,6 @@ input[type="radio"].visually-hidden {
 
 /*  SLIDER  */
 
-.main-container,
-.catalog-container {
-	margin-top: 50px;
-}
-
 .slide-1 {
 	background-color: #849d8f;
 }
@@ -405,19 +401,22 @@ input[type="radio"].visually-hidden {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: reverse;
-		-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+			flex-direction: column;
 	margin-bottom: 35px;
 	padding-top: 0;
 
 	min-height: 493px;
+
+	position: relative;
 }
 
 .slider-content {
 	-ms-flex-preferred-size: 100%;
 		flex-basis: 100%;
+	min-height: 489px;
 }
 
 .slider-content li {
@@ -440,7 +439,7 @@ input[type="radio"].visually-hidden {
 			order: -1;
 	z-index: -1;
 	position: absolute;
-	top: 0;
+	top: -119px;
 	left: 50%;
 	margin-left: -522px;
 }
@@ -522,7 +521,7 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-top: -45px;
 	margin-left: 3px;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -531,8 +530,6 @@ input[type="radio"].visually-hidden {
 	-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 			flex-direction: row;
-	-ms-flex-item-align: end;
-			align-self: flex-end;
 }
 
 .pagination button {
@@ -872,6 +869,9 @@ button.main-slider-active {
 }
 
 .subscribe-form input {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+	height: 44px;
 	border-radius: 5px;
 	padding: 10px 14px;
 	-webkit-box-flex: 1;
@@ -1272,6 +1272,7 @@ button.main-slider-active {
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	width: 267px;
+	height: 44px;
 	border-radius: 5px;
 	font-size: 16px;
 	line-height: 24px;
@@ -1357,12 +1358,15 @@ button.main-slider-active {
 
 .search-form input {
 	width: 100%;
+	height: 36px;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	font-size: 14px;
 	line-height: 24px;
 	border-radius: 5px;
-	padding: 10px 0 10px 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-left: 14px;
 }
 
 /*  HIDDEN: LOGIN  */

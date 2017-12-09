@@ -65,7 +65,8 @@ var password 	= form.querySelector("[name=feedback-email]");
 openLink.addEventListener("click", function(evt) {
 	evt.preventDefault();
 
-	modal.classList.remove("visually-hidden", "zoomOutRight");
+	modal.classList.remove("visually-hidden");
+	modal.classList.remove("zoomOutRight");
 	modal.classList.add("zoomInLeft");
 
 	body.classList.add("overlay");
@@ -76,7 +77,8 @@ buttonClose.addEventListener("click", function(evt) {
 
 	body.classList.remove("overlay");
 
-	modal.classList.remove("zoomInLeft", "shake");
+	modal.classList.remove("zoomInLeft");
+	modal.classList.remove("shake");
 	modal.classList.add("zoomOutRight");
 });
 
